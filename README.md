@@ -53,7 +53,7 @@ colcon build
     ```
     ros2 launch gazebo_bringup simulation.launch.py
     ```
-    <img src="media/waypoint_gzenv.png" alt="Waypoints" width="800"/>
+    <img src="media/waypoint_gzenv.png" alt="Waypoints" width="300"/>
 
 1. 🧭 Launch Navigation
 
