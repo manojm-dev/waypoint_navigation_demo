@@ -53,26 +53,24 @@ colcon build
     ```
     ros2 launch gazebo_bringup simulation.launch.py
     ```
-    <img src="media/waypoint_gzenv.png" alt="Waypoints" width="300"/>
+    <img src="media/waypoint_gzenv.png" alt="Waypoints" width="800"/>
 
-
-2. 🧭 Launch Navigation
+1. 🧭 Launch Navigation
 
     - Running this cmd  will activate the nav2 navigation stack with static map, enabling it to plan paths and move around the environment.
-    > [!Note] 
-    > Don't forget to localize the robot in RViz and set a goal near waypoint 4, as per the task description in task the robot need to be near waypoint 4.
+    - NOTE: Don't forget to localize the robot in RViz and set a goal near waypoint 4, as per the task description in task the robot need to be near waypoint 4.
     ```
     ros2 launch navigation_bringup navigation.launch.py
     ```
     <img src="media/move_near_four.png" alt="Waypoints" width="300"/>
 
 
-3. 🎯 Running waypoint navigtor 
+2. 🎯 Running waypoint navigtor 
 
-    Finally, to navigate to a specific waypoint:  
-    - Waypoints are mapped as follows:
+    - Finally, to navigate to a specific waypoint:  
+        - Waypoints are mapped as follows:
         - (1, A), (2, B), (3, C), (4, D), (5, E), (6, F)
-    To navigate to waypoint B (as per description given in task)
+    - To navigate to waypoint B (as per description given in task)
 
     ```
     ros2 run waypoint_navigation waypoint_navigator --ros-args -p waypoint_goal:="B"
