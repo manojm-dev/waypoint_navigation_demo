@@ -1,0 +1,18 @@
+[submodule "questbot_description"]
+	path = questbot_description
+	url = https://github.com/manojm-dev/questbot_description.git
+[submodule "gazebo_bringup"]
+	path = gazebo_bringup
+	url = https://github.com/manojm-dev/gazebo_bringup.git
+[submodule "localization_bringup"]
+	path = localization_bringup
+	url = https://github.com/manojm-dev/localization_bringup.git
+[submodule "navigation_bringup"]
+	path = navigation_bringup
+	url = https://github.com/manojm-dev/navigation_bringup.git
+[submodule "waypoint_tools"]
+	path = waypoint_tools
+	url = https://github.com/manojm-dev/waypoint_tools.git
+[submodule "waypoint_navigation"]
+	path = waypoint_navigation
+	url = https://github.com/manojm-dev/waypoint_navigation.git
