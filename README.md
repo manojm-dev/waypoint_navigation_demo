@@ -11,8 +11,17 @@ This repo includes several submodules required for the demo. You can click on ea
 - [gazebo_bringup](https://github.com/manojm-dev/gazebo_bringup.git): Brings up the Gazebo simulation.
 - [localization_bringup](https://github.com/manojm-dev/localization_bringup.git): Handles robot localization.
 - [navigation_bringup](https://github.com/manojm-dev/navigation_bringup.git): Handles navigation functionality.
-- [waypoint_tools](https://github.com/manojm-dev/waypoint_tools.git): Tools for managing waypoints.
-- [waypoint_navigation](https://github.com/manojm-dev/waypoint_navigation.git): Manages the waypoint navigation logic.
+- [waypoint_tools](https://github.com/manojm-dev/waypoint_tools.git):  This package is used to interactively record waypoints based on the robot's odometry and save them to a JSON file.
+- [waypoint_navigation](https://github.com/manojm-dev/waypoint_navigation.git): This package does planning and navigation to the goal waypoint throught shortest path.
+
+## Links
+- questbot_description  - [README](https://github.com/manojm-dev/questbot_description/blob/main/README.md)
+- gazebo_bringup        - [README](https://github.com/manojm-dev/gazebo_bringup/blob/main/README.md)
+- localization_bringup  - [README](https://github.com/manojm-dev/localization_bringup/blob/main/README.md)
+- navigation_bringup    - [README](https://github.com/manojm-dev/navigation_bringup/blob/main/README.md)
+- waypoint_tools        - [README](https://github.com/manojm-dev/waypoint_tools/blob/main/README.md) | [Demo Video](https://drive.google.com/file/d/1KklIigYbCunJCCx7AhKZNd6-13tMK6ji/view?usp=sharing)
+- waypoint_navigation   - [README](https://github.com/manojm-dev/waypoint_navigation/blob/main/README.md) | [Demo Video](https://drive.google.com/file/d/1bQ8AxHoTOHwkVaLGyLWngporGGeXUoO3/view?usp=sharing) 
+
 
 
 ## 🧑‍💻 Demo Setup
@@ -51,7 +60,7 @@ colcon build
 
     - Running this cmd  will activate the nav2 navigation stack with static map, enabling it to plan paths and move around the environment.
     > [!Note] 
-    > Don't forget to localize the robot in RViz and set a goal near waypoint 4, as per the task description in task.
+    > Don't forget to localize the robot in RViz and set a goal near waypoint 4, as per the task description in task the robot need to be near waypoint 4.
     ```
     ros2 launch navigation_bringup navigation.launch.py
     ```
@@ -69,7 +78,6 @@ colcon build
     ros2 run waypoint_navigation waypoint_navigator --ros-args -p waypoint_goal:="B"
     ```
     <img src="media/move_to_b.png" alt="Waypoints" width="300"/>
-
 
 ## 🎉 Conclusion
 
